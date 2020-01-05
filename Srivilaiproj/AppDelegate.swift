@@ -12,12 +12,16 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
-    }
+         window = UIWindow()
+           window?.makeKeyAndVisible()
+           
+           let gameViewController = GameViewController() // choose ViewController for final or GameViewController for starter
+           window?.rootViewController = gameViewController
+           return true
+         }
 
     // MARK: UISceneSession Lifecycle
 

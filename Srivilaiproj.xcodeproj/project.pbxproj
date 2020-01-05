@@ -9,23 +9,36 @@
 /* Begin PBXBuildFile section */
 		043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D022E23A8A6A50046AA4E /* AppDelegate.swift */; };
 		043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D023023A8A6A50046AA4E /* SceneDelegate.swift */; };
-		043D023323A8A6A50046AA4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D023223A8A6A50046AA4E /* ViewController.swift */; };
 		043D023623A8A6A50046AA4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023423A8A6A50046AA4E /* Main.storyboard */; };
 		043D023923A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043D023723A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld */; };
 		043D023B23A8A6A60046AA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D023A23A8A6A60046AA4E /* Assets.xcassets */; };
 		043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023C23A8A6A60046AA4E /* LaunchScreen.storyboard */; };
+		043D024723A8AC240046AA4E /* Sarabun in Resources */ = {isa = PBXBuildFile; fileRef = 043D024623A8AC240046AA4E /* Sarabun */; };
+		043D024C23A8B0BF0046AA4E /* Typo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D024B23A8B0BF0046AA4E /* Typo.swift */; };
+		0440323F23AB949000C1A060 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440323E23AB949000C1A060 /* GameViewController.swift */; };
+		0440324123ABA19900C1A060 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440324023ABA19900C1A060 /* ScanViewController.swift */; };
+		04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFF86523A94D4800EAF2A5 /* Extensions.swift */; };
+		04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6F723AB768F00CB069D /* ViewController.swift */; };
+		04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6FD23AB877C00CB069D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043D022B23A8A6A50046AA4E /* Srivilaiproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Srivilaiproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D022E23A8A6A50046AA4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D023023A8A6A50046AA4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		043D023223A8A6A50046AA4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		043D023523A8A6A50046AA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043D023823A8A6A50046AA4E /* Srivilaiproj.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Srivilaiproj.xcdatamodel; sourceTree = "<group>"; };
 		043D023A23A8A6A60046AA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043D023D23A8A6A60046AA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043D023F23A8A6A60046AA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043D024623A8AC240046AA4E /* Sarabun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sarabun; sourceTree = "<group>"; };
+		043D024A23A8AC390046AA4E /* East liberty signature.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "East liberty signature.ttf"; sourceTree = "<group>"; };
+		043D024B23A8B0BF0046AA4E /* Typo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typo.swift; sourceTree = "<group>"; };
+		0440323E23AB949000C1A060 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		0440324023ABA19900C1A060 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		04DFF86523A94D4800EAF2A5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04ECA6F723AB768F00CB069D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04ECA6FD23AB877C00CB069D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +55,9 @@
 		043D022223A8A6A50046AA4E = {
 			isa = PBXGroup;
 			children = (
+				04DFF85E23A91D5E00EAF2A5 /* Controller */,
 				043D022D23A8A6A50046AA4E /* Srivilaiproj */,
+				043D024523A8AC0D0046AA4E /* Font */,
 				043D022C23A8A6A50046AA4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,16 +73,37 @@
 		043D022D23A8A6A50046AA4E /* Srivilaiproj */ = {
 			isa = PBXGroup;
 			children = (
+				04DFF86523A94D4800EAF2A5 /* Extensions.swift */,
 				043D022E23A8A6A50046AA4E /* AppDelegate.swift */,
 				043D023023A8A6A50046AA4E /* SceneDelegate.swift */,
-				043D023223A8A6A50046AA4E /* ViewController.swift */,
-				043D023423A8A6A50046AA4E /* Main.storyboard */,
+				043D024B23A8B0BF0046AA4E /* Typo.swift */,
 				043D023A23A8A6A60046AA4E /* Assets.xcassets */,
+				043D023423A8A6A50046AA4E /* Main.storyboard */,
 				043D023C23A8A6A60046AA4E /* LaunchScreen.storyboard */,
 				043D023F23A8A6A60046AA4E /* Info.plist */,
 				043D023723A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld */,
 			);
 			path = Srivilaiproj;
+			sourceTree = "<group>";
+		};
+		043D024523A8AC0D0046AA4E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				043D024A23A8AC390046AA4E /* East liberty signature.ttf */,
+				043D024623A8AC240046AA4E /* Sarabun */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		04DFF85E23A91D5E00EAF2A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04ECA6F723AB768F00CB069D /* ViewController.swift */,
+				04ECA6FD23AB877C00CB069D /* WebViewController.swift */,
+				0440323E23AB949000C1A060 /* GameViewController.swift */,
+				0440324023ABA19900C1A060 /* ScanViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +167,7 @@
 				043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */,
 				043D023B23A8A6A60046AA4E /* Assets.xcassets in Resources */,
 				043D023623A8A6A50046AA4E /* Main.storyboard in Resources */,
+				043D024723A8AC240046AA4E /* Sarabun in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043D023323A8A6A50046AA4E /* ViewController.swift in Sources */,
+				04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */,
+				043D024C23A8B0BF0046AA4E /* Typo.swift in Sources */,
 				043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */,
+				04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */,
+				0440323F23AB949000C1A060 /* GameViewController.swift in Sources */,
+				04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */,
 				043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */,
 				043D023923A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld in Sources */,
+				0440324123ABA19900C1A060 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +331,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4XMDKUJAG;
 				INFOPLIST_FILE = Srivilaiproj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +350,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4XMDKUJAG;
 				INFOPLIST_FILE = Srivilaiproj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
