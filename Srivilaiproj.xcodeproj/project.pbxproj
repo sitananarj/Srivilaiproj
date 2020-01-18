@@ -17,7 +17,6 @@
 		043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023C23A8A6A60046AA4E /* LaunchScreen.storyboard */; };
 		043D024723A8AC240046AA4E /* Sarabun in Resources */ = {isa = PBXBuildFile; fileRef = 043D024623A8AC240046AA4E /* Sarabun */; };
 		043D024C23A8B0BF0046AA4E /* Typo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D024B23A8B0BF0046AA4E /* Typo.swift */; };
-		0440323F23AB949000C1A060 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440323E23AB949000C1A060 /* GameViewController.swift */; };
 		0440324123ABA19900C1A060 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440324023ABA19900C1A060 /* ScanViewController.swift */; };
 		04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFF86523A94D4800EAF2A5 /* Extensions.swift */; };
 		04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6F723AB768F00CB069D /* ViewController.swift */; };
@@ -38,7 +37,6 @@
 		043D024623A8AC240046AA4E /* Sarabun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sarabun; sourceTree = "<group>"; };
 		043D024A23A8AC390046AA4E /* East liberty signature.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "East liberty signature.ttf"; sourceTree = "<group>"; };
 		043D024B23A8B0BF0046AA4E /* Typo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typo.swift; sourceTree = "<group>"; };
-		0440323E23AB949000C1A060 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0440324023ABA19900C1A060 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		04DFF86523A94D4800EAF2A5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		04ECA6F723AB768F00CB069D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			children = (
 				04ECA6F723AB768F00CB069D /* ViewController.swift */,
 				04ECA6FD23AB877C00CB069D /* WebViewController.swift */,
-				0440323E23AB949000C1A060 /* GameViewController.swift */,
 				0440324023ABA19900C1A060 /* ScanViewController.swift */,
 				0400416723D06ADB00C63F9E /* HomeTableViewController.swift */,
 				0400B7B023D3940C0088C616 /* HistoricalTableViewController.swift */,
@@ -189,7 +186,6 @@
 				043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */,
 				04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */,
 				0400416823D06ADB00C63F9E /* HomeTableViewController.swift in Sources */,
-				0440323F23AB949000C1A060 /* GameViewController.swift in Sources */,
 				04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */,
 				0400B7B123D3940C0088C616 /* HistoricalTableViewController.swift in Sources */,
 				043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */,
