@@ -23,8 +23,7 @@
 //    }
 import UIKit
 import ARKit
-class GameViewController: UIViewController, ARSCNViewDelegate {
-    
+class GameViewController: UIViewController, ARSCNViewDelegate {s
    let arView: ARSCNView = {
         let view = ARSCNView()
         view.translatesAutoresizingMaskIntoConstraints = false
