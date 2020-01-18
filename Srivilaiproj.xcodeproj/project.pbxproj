@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400416823D06ADB00C63F9E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400416723D06ADB00C63F9E /* HomeTableViewController.swift */; };
 		043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D022E23A8A6A50046AA4E /* AppDelegate.swift */; };
 		043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D023023A8A6A50046AA4E /* SceneDelegate.swift */; };
 		043D023623A8A6A50046AA4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023423A8A6A50046AA4E /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0400416723D06ADB00C63F9E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		043D022B23A8A6A50046AA4E /* Srivilaiproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Srivilaiproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D022E23A8A6A50046AA4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D023023A8A6A50046AA4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				04ECA6FD23AB877C00CB069D /* WebViewController.swift */,
 				0440323E23AB949000C1A060 /* GameViewController.swift */,
 				0440324023ABA19900C1A060 /* ScanViewController.swift */,
+				0400416723D06ADB00C63F9E /* HomeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				043D024C23A8B0BF0046AA4E /* Typo.swift in Sources */,
 				043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */,
 				04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */,
+				0400416823D06ADB00C63F9E /* HomeTableViewController.swift in Sources */,
 				0440323F23AB949000C1A060 /* GameViewController.swift in Sources */,
 				04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */,
 				043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */,
