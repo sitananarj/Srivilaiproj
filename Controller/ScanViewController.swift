@@ -23,13 +23,13 @@
 //    }
 import UIKit
 import ARKit
-class GameViewController: UIViewController, ARSCNViewDelegate {s
+class GameViewController: UIViewController, ARSCNViewDelegate {
    let arView: ARSCNView = {
         let view = ARSCNView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
       }()
-      
+        
       let configuration = ARWorldTrackingConfiguration()
       override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class GameViewController: UIViewController, ARSCNViewDelegate {s
         node.name = "chang1"
         node.eulerAngles = SCNVector3(0, 0, 0)
         node.geometry = SCNPlane(width: CGFloat(anchor.extent.x), height: CGFloat(anchor.extent.z))
-        node.geometry?.firstMaterial?.diffuse.contents =  #imageLiteral(resourceName: "chang 2")
+        node.geometry?.firstMaterial?.diffuse.contents =  #imageLiteral(resourceName: "chang2")
         node.geometry?.firstMaterial?.isDoubleSided = true
         node.position = SCNVector3(anchor.center.x, anchor.center.y, anchor.center.z)
         return node
@@ -91,7 +91,6 @@ class GameViewController: UIViewController, ARSCNViewDelegate {s
         print("Plane anchor removed with extent:", anchorPlane.extent)
         removeNode(named: "chang2")
       }
-
     }
 
     
