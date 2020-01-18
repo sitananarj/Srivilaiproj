@@ -314,6 +314,14 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRY-Oe-UsR">
+                                    <rect key="frame" x="277" y="630" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <segue destination="yVi-Fw-JjB" kind="show" id="DVv-Y0-chM"/>
+                                    </connections>
+                                </button>
                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="N3y-mw-SGS">
                                     <rect key="frame" x="-2" y="1241" width="381" height="218"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -359,13 +367,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xkq-St-Sd3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="797-kL-iIX"/>
                     <connections>
                         <outlet property="sceneView" destination="Po6-bf-CVr" id="Avv-0p-1ZI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNs-4w-3Qz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2638" y="144"/>
+            <point key="canvasLocation" x="1626" y="663"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iRC-Xn-xPb">
