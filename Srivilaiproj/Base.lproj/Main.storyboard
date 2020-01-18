@@ -19,11 +19,11 @@
                             <rect key="frame" x="0.0" y="99.666667938232422" width="375" height="271"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8w7-F3-gPg">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Historicalpark" translatesAutoresizingMaskIntoConstraints="NO" id="8w7-F3-gPg">
                                     <rect key="frame" x="31" y="50" width="143" height="213"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrP-rQ-sbR">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ms" translatesAutoresizingMaskIntoConstraints="NO" id="xrP-rQ-sbR">
                                     <rect key="frame" x="201" y="50" width="143" height="213"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -331,6 +331,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Historicalpark" width="1785" height="2526"/>
+        <image name="Ms" width="640" height="617"/>
         <image name="watchangrop" width="329" height="219.5"/>
     </resources>
 </document>
