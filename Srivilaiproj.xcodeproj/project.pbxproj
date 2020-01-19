@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0400416823D06ADB00C63F9E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400416723D06ADB00C63F9E /* HomeTableViewController.swift */; };
 		0400B7B123D3940C0088C616 /* HistoricalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B7B023D3940C0088C616 /* HistoricalTableViewController.swift */; };
+		043958D723D4E13000788C61 /* Podflie in Resources */ = {isa = PBXBuildFile; fileRef = 043958D623D4E13000788C61 /* Podflie */; };
 		043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D022E23A8A6A50046AA4E /* AppDelegate.swift */; };
 		043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D023023A8A6A50046AA4E /* SceneDelegate.swift */; };
 		043D023623A8A6A50046AA4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023423A8A6A50046AA4E /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		0400416723D06ADB00C63F9E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		0400B7B023D3940C0088C616 /* HistoricalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalTableViewController.swift; sourceTree = "<group>"; };
+		043958D623D4E13000788C61 /* Podflie */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podflie; sourceTree = "<group>"; };
 		043D022B23A8A6A50046AA4E /* Srivilaiproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Srivilaiproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D022E23A8A6A50046AA4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D023023A8A6A50046AA4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		043D022223A8A6A50046AA4E = {
 			isa = PBXGroup;
 			children = (
+				043958D623D4E13000788C61 /* Podflie */,
 				04DFF85E23A91D5E00EAF2A5 /* Controller */,
 				043D022D23A8A6A50046AA4E /* Srivilaiproj */,
 				043D024523A8AC0D0046AA4E /* Font */,
@@ -171,6 +174,7 @@
 				043D023B23A8A6A60046AA4E /* Assets.xcassets in Resources */,
 				043D023623A8A6A50046AA4E /* Main.storyboard in Resources */,
 				043D024723A8AC240046AA4E /* Sarabun in Resources */,
+				043958D723D4E13000788C61 /* Podflie in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
