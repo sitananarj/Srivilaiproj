@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>988767885456-065t5tns9gb2vsstjpgh13pm94cfdqr8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.988767885456-065t5tns9gb2vsstjpgh13pm94cfdqr8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBT6LrWW8tQh3mZzUNLGk65tvRp1w7nNhM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>988767885456</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.historyproj.Srivilaiproj</string>
+	<key>PROJECT_ID</key>
+	<string>srivilai-600bd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>srivilai-600bd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:988767885456:ios:2ff31e65432de7e3316015</string>
+	<key>DATABASE_URL</key>
+	<string>https://srivilai-600bd.firebaseio.com</string>
+</dict>
+</plist>

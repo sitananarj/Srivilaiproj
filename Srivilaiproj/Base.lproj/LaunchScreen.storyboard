@@ -15,31 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo01" translatesAutoresizingMaskIntoConstraints="NO" id="MrY-KZ-VDE">
-                                <rect key="frame" x="95" y="335" width="224" height="119"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="119" id="9Cx-Uq-aBm"/>
-                                    <constraint firstAttribute="width" constant="224" id="FFL-aH-mcz"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo01" translatesAutoresizingMaskIntoConstraints="NO" id="MrY-KZ-VDE">
+                                <rect key="frame" x="156" y="370" width="102" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SRIVILAI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MK-xd-zLP">
-                                <rect key="frame" x="90" y="472" width="235" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="235" id="GTw-FZ-fA8"/>
-                                    <constraint firstAttribute="height" constant="51" id="lXf-e8-UyX"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SRIVILAI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MK-xd-zLP">
+                                <rect key="frame" x="90" y="487" width="235" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="50"/>
                                 <color key="textColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2196078431372549" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="MrY-KZ-VDE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="291" id="Pxh-sl-xpd"/>
-                            <constraint firstItem="2MK-xd-zLP" firstAttribute="top" secondItem="MrY-KZ-VDE" secondAttribute="bottom" constant="18" id="XQ7-hZ-Lcy"/>
-                            <constraint firstItem="MrY-KZ-VDE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="j0Z-rA-Ib0"/>
-                            <constraint firstItem="2MK-xd-zLP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="zWM-Dh-PZa"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
