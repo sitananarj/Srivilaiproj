@@ -7,35 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0400416823D06ADB00C63F9E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400416723D06ADB00C63F9E /* HomeTableViewController.swift */; };
-		0400B7B123D3940C0088C616 /* HistoricalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B7B023D3940C0088C616 /* HistoricalTableViewController.swift */; };
+		04056A6923E1E28000153B52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04056A6823E1E28000153B52 /* HomeViewController.swift */; };
+		040E680123DC2ABE00A03601 /* ArtInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E680023DC2ABE00A03601 /* ArtInfoViewController.swift */; };
+		04110BA623DC1AE600088A2D /* stkjny05.png in Resources */ = {isa = PBXBuildFile; fileRef = 04110BA523DC1AE600088A2D /* stkjny05.png */; };
+		04286D2B23E4E2ED00B8B547 /* chang.png in Resources */ = {isa = PBXBuildFile; fileRef = 04286D2923E4E2EC00B8B547 /* chang.png */; };
+		04286D2C23E4E2ED00B8B547 /* chang-l.png in Resources */ = {isa = PBXBuildFile; fileRef = 04286D2A23E4E2ED00B8B547 /* chang-l.png */; };
+		04286D2E23E4F20100B8B547 /* WatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04286D2D23E4F20100B8B547 /* WatViewController.swift */; };
 		043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D022E23A8A6A50046AA4E /* AppDelegate.swift */; };
 		043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D023023A8A6A50046AA4E /* SceneDelegate.swift */; };
 		043D023623A8A6A50046AA4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023423A8A6A50046AA4E /* Main.storyboard */; };
 		043D023923A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043D023723A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld */; };
-		043D023B23A8A6A60046AA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D023A23A8A6A60046AA4E /* Assets.xcassets */; };
 		043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023C23A8A6A60046AA4E /* LaunchScreen.storyboard */; };
 		0440324123ABA19900C1A060 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440324023ABA19900C1A060 /* ScanViewController.swift */; };
 		044F2D2523D728CF001F544E /* ARScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F2D2423D728CF001F544E /* ARScanViewController.swift */; };
 		044F2D2F23D7344C001F544E /* alpha.png in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D2E23D7344C001F544E /* alpha.png */; };
 		044F2D3123D7379A001F544E /* scene.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D3023D7379A001F544E /* scene.scnassets */; };
 		044F2D3323D98804001F544E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D3223D98803001F544E /* GoogleService-Info.plist */; };
-		04D3B85A23D997E40083B67A /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3B85923D997E40083B67A /* data.swift */; };
+		046F41F323E28BCA00E2A4D9 /* InfoHistoricalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F41F223E28BCA00E2A4D9 /* InfoHistoricalViewController.swift */; };
 		04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFF86523A94D4800EAF2A5 /* Extensions.swift */; };
+		04EB6AF123E47A34004F7F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EB6AF023E47A34004F7F19 /* Assets.xcassets */; };
 		04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6F723AB768F00CB069D /* ViewController.swift */; };
 		04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6FD23AB877C00CB069D /* WebViewController.swift */; };
 		0FDA4929425DFC8C39D8E3CD /* Pods_Srivilaiproj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB6B83B33DD876135B4A589 /* Pods_Srivilaiproj.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0400416723D06ADB00C63F9E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		0400B7B023D3940C0088C616 /* HistoricalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalTableViewController.swift; sourceTree = "<group>"; };
+		04056A6823E1E28000153B52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		040E680023DC2ABE00A03601 /* ArtInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtInfoViewController.swift; sourceTree = "<group>"; };
+		04110BA523DC1AE600088A2D /* stkjny05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stkjny05.png; sourceTree = "<group>"; };
+		04286D2923E4E2EC00B8B547 /* chang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chang.png; sourceTree = "<group>"; };
+		04286D2A23E4E2ED00B8B547 /* chang-l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chang-l.png"; sourceTree = "<group>"; };
+		04286D2D23E4F20100B8B547 /* WatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatViewController.swift; sourceTree = "<group>"; };
 		043D022B23A8A6A50046AA4E /* Srivilaiproj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Srivilaiproj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D022E23A8A6A50046AA4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D023023A8A6A50046AA4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		043D023523A8A6A50046AA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043D023823A8A6A50046AA4E /* Srivilaiproj.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Srivilaiproj.xcdatamodel; sourceTree = "<group>"; };
-		043D023A23A8A6A60046AA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043D023D23A8A6A60046AA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043D023F23A8A6A60046AA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0440324023ABA19900C1A060 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
@@ -43,8 +50,9 @@
 		044F2D2E23D7344C001F544E /* alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpha.png; sourceTree = "<group>"; };
 		044F2D3023D7379A001F544E /* scene.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = scene.scnassets; sourceTree = "<group>"; };
 		044F2D3223D98803001F544E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		04D3B85923D997E40083B67A /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		046F41F223E28BCA00E2A4D9 /* InfoHistoricalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHistoricalViewController.swift; sourceTree = "<group>"; };
 		04DFF86523A94D4800EAF2A5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04EB6AF023E47A34004F7F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ECA6F723AB768F00CB069D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04ECA6FD23AB877C00CB069D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0DB6B83B33DD876135B4A589 /* Pods_Srivilaiproj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Srivilaiproj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +75,6 @@
 		043D022223A8A6A50046AA4E = {
 			isa = PBXGroup;
 			children = (
-				04D3B85923D997E40083B67A /* data.swift */,
 				04DFF85E23A91D5E00EAF2A5 /* Controller */,
 				043D022D23A8A6A50046AA4E /* Srivilaiproj */,
 				044F2D3223D98803001F544E /* GoogleService-Info.plist */,
@@ -93,7 +100,7 @@
 				04DFF86523A94D4800EAF2A5 /* Extensions.swift */,
 				043D022E23A8A6A50046AA4E /* AppDelegate.swift */,
 				043D023023A8A6A50046AA4E /* SceneDelegate.swift */,
-				043D023A23A8A6A60046AA4E /* Assets.xcassets */,
+				04EB6AF023E47A34004F7F19 /* Assets.xcassets */,
 				043D023423A8A6A50046AA4E /* Main.storyboard */,
 				043D023C23A8A6A60046AA4E /* LaunchScreen.storyboard */,
 				043D023F23A8A6A60046AA4E /* Info.plist */,
@@ -107,6 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				044F2D2423D728CF001F544E /* ARScanViewController.swift */,
+				040E680023DC2ABE00A03601 /* ArtInfoViewController.swift */,
+				04056A6823E1E28000153B52 /* HomeViewController.swift */,
+				046F41F223E28BCA00E2A4D9 /* InfoHistoricalViewController.swift */,
+				04286D2D23E4F20100B8B547 /* WatViewController.swift */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -114,6 +125,9 @@
 		044F2D2923D7336F001F544E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				04110BA523DC1AE600088A2D /* stkjny05.png */,
+				04286D2A23E4E2ED00B8B547 /* chang-l.png */,
+				04286D2923E4E2EC00B8B547 /* chang.png */,
 				044F2D2E23D7344C001F544E /* alpha.png */,
 			);
 			path = Image;
@@ -125,8 +139,6 @@
 				04ECA6F723AB768F00CB069D /* ViewController.swift */,
 				04ECA6FD23AB877C00CB069D /* WebViewController.swift */,
 				0440324023ABA19900C1A060 /* ScanViewController.swift */,
-				0400416723D06ADB00C63F9E /* HomeTableViewController.swift */,
-				0400B7B023D3940C0088C616 /* HistoricalTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,11 +220,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04286D2C23E4E2ED00B8B547 /* chang-l.png in Resources */,
 				044F2D3123D7379A001F544E /* scene.scnassets in Resources */,
 				043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */,
 				044F2D2F23D7344C001F544E /* alpha.png in Resources */,
-				043D023B23A8A6A60046AA4E /* Assets.xcassets in Resources */,
 				043D023623A8A6A50046AA4E /* Main.storyboard in Resources */,
+				04EB6AF123E47A34004F7F19 /* Assets.xcassets in Resources */,
+				04286D2B23E4E2ED00B8B547 /* chang.png in Resources */,
+				04110BA623DC1AE600088A2D /* stkjny05.png in Resources */,
 				044F2D3323D98804001F544E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,12 +282,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */,
+				04286D2E23E4F20100B8B547 /* WatViewController.swift in Sources */,
 				043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */,
+				046F41F323E28BCA00E2A4D9 /* InfoHistoricalViewController.swift in Sources */,
 				04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */,
-				04D3B85A23D997E40083B67A /* data.swift in Sources */,
-				0400416823D06ADB00C63F9E /* HomeTableViewController.swift in Sources */,
+				04056A6923E1E28000153B52 /* HomeViewController.swift in Sources */,
 				04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */,
-				0400B7B123D3940C0088C616 /* HistoricalTableViewController.swift in Sources */,
+				040E680123DC2ABE00A03601 /* ArtInfoViewController.swift in Sources */,
 				043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */,
 				043D023923A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld in Sources */,
 				044F2D2523D728CF001F544E /* ARScanViewController.swift in Sources */,

@@ -8,5 +8,25 @@
 
 import Foundation
 import FirebaseDatabase
-import Firebase
+
+//class data{
+//    
+//    let key : String
+//    var completed : Bool
+//    let ref:DatabaseReference!
+//    init(key : String) {
+//        self.key = key
+//        self.ref = nil
+//    }
+//    init(snapshot : DataSnapshot) {
+//        key = snapshot.key
+//        let snapshotValue = snapshot.value as! [String:AnyObject]
+//        ref = snapshot.ref
+//    }
+//    func  toAnyObject() -> Any {
+//        return[]
+//    }
+//}
+
+
 
