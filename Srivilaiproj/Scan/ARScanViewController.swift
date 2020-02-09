@@ -24,15 +24,19 @@ class ARScanViewController: UIViewController, ARSCNViewDelegate {
     var mainNode: SCNNode?
     var showA = true
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(button)
-    
-        
+//        let button = UIButton()
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        view.addSubview(button)
+//        button.layer.cornerRadius = 10
+//        button.backgroundColor = UIColor.init(red: 48/255, green: 155/255, blue: 255/255, alpha: 1)
+//        button.setTitle("Information", for: .normal)
+//
+//        var constraints = {
+//            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80)
+//        }
         let arImage = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil)
         let config = ARWorldTrackingConfiguration()
         config.detectionImages = arImage
@@ -51,7 +55,7 @@ class ARScanViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func touchInfo(_ sender: Any) {
         performSegue(withIdentifier: "info", sender: self)
     }
-    
+
     @IBAction func touchDiff(_ sender: Any) {
         if showA {
             mainNode?.childNode(withName: "a", recursively: true)?.isHidden = true

@@ -27,8 +27,6 @@ class ArtInfoViewController: UIViewController {
     @IBOutlet weak var bottom1title: UILabel!
     @IBOutlet weak var bottom1body: UITextView!
     
-    
-    
     let db = Firestore.firestore()
     var selectName = ""
 
@@ -56,9 +54,7 @@ class ArtInfoViewController: UIViewController {
                         self.bottom1title.text = document.data()["bottom1-title"] as? String
                         self.bottom1body.text = document.data()["bottom1-body"] as? String
                         
-                        
-                        
-                        
+                    
                     }
                 }
         }
