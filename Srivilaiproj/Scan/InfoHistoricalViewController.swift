@@ -10,7 +10,7 @@ import UIKit
 import  Firebase
 
 class InfoHistoricalViewController: UIViewController {
-
+    
     @IBOutlet weak var imagetop: UIImageView!
     
     @IBOutlet weak var nameplace: UILabel!
@@ -33,40 +33,40 @@ class InfoHistoricalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         db.collection("info-historical-park").getDocuments() { (querySnapshot, err) in
-                        if let err = err {
-                            print("Error getting documents: \(err)")
-                        } else {
-                            for document in querySnapshot!.documents {
-                                self.imagetop.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-top"] as! String)!))
-                                
-                                
-                                self.nameplace.text = document.data()["name-top"] as? String
-                                self.infohistorical.text = document.data()["info-historical"] as? String
-                                
-                                self.namezone1.text = document.data()["name-zone1"] as? String
-                                self.imagezone1.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-zone1"] as! String)!))
-                                self.infozone1.text = document.data()["info-zone"] as? String
-                                
-                                self.namezone2.text = document.data()["name-zone2"] as? String
-                                self.imagezone2.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-zone2"] as! String)!))
-                                self.infozone2.text = document.data()["info-zone2"] as? String
-                                
-                                
-
-        // Do any additional setup after loading the view.
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    self.imagetop.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-top"] as! String)!))
+                    
+                    
+                    self.nameplace.text = document.data()["name-top"] as? String
+                    self.infohistorical.text = document.data()["info-historical"] as? String
+                    
+                    self.namezone1.text = document.data()["name-zone1"] as? String
+                    self.imagezone1.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-zone1"] as! String)!))
+                    self.infozone1.text = document.data()["info-zone"] as? String
+                    
+                    self.namezone2.text = document.data()["name-zone2"] as? String
+                    self.imagezone2.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-zone2"] as! String)!))
+                    self.infozone2.text = document.data()["info-zone2"] as? String
+                    
+                    
+                    
+                    // Do any additional setup after loading the view.
+                }
+            }
+            
+            /*
+             // MARK: - Navigation
+             
+             // In a storyboard-based application, you will often want to do a little preparation before navigation
+             override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+             // Get the new view controller using segue.destination.
+             // Pass the selected object to the new view controller.
+             }
+             */
+            
+        }
     }
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-}
 }

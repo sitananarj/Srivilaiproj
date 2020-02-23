@@ -19,11 +19,21 @@
 		043D023923A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043D023723A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld */; };
 		043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D023C23A8A6A60046AA4E /* LaunchScreen.storyboard */; };
 		0440324123ABA19900C1A060 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440324023ABA19900C1A060 /* ScanViewController.swift */; };
+		044164F223F6E028007F0F93 /* LocationImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044164F123F6E028007F0F93 /* LocationImageCollectionViewCell.swift */; };
 		044F2D2523D728CF001F544E /* ARScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F2D2423D728CF001F544E /* ARScanViewController.swift */; };
 		044F2D2F23D7344C001F544E /* alpha.png in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D2E23D7344C001F544E /* alpha.png */; };
 		044F2D3123D7379A001F544E /* scene.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D3023D7379A001F544E /* scene.scnassets */; };
 		044F2D3323D98804001F544E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D3223D98803001F544E /* GoogleService-Info.plist */; };
+		046E7C69240253B300689018 /* yaksa.gif in Resources */ = {isa = PBXBuildFile; fileRef = 046E7C68240253B300689018 /* yaksa.gif */; };
+		046E7C6B2402546F00689018 /* ShowModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E7C6A2402546F00689018 /* ShowModelViewController.swift */; };
+		046E7C6D24025C7000689018 /* ModelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E7C6C24025C7000689018 /* ModelDetailViewController.swift */; };
+		046E7C6F240266F300689018 /* MuseumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E7C6E240266F300689018 /* MuseumDetailViewController.swift */; };
 		046F41F323E28BCA00E2A4D9 /* InfoHistoricalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F41F223E28BCA00E2A4D9 /* InfoHistoricalViewController.swift */; };
+		04B3AD1B23FEC64E00FC95CC /* MapImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD1A23FEC64E00FC95CC /* MapImageViewController.swift */; };
+		04B3AD1D23FEC8E700FC95CC /* FullImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD1C23FEC8E700FC95CC /* FullImageCollectionViewCell.swift */; };
+		04B3AD2023FED1DC00FC95CC /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD1F23FED1DC00FC95CC /* ScanQRViewController.swift */; };
+		04C6FE7E23F28F8900C42FAF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6FE7D23F28F8900C42FAF /* MapViewController.swift */; };
+		04C6FE8023F2962500C42FAF /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6FE7F23F2962500C42FAF /* MapDetailViewController.swift */; };
 		04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFF86523A94D4800EAF2A5 /* Extensions.swift */; };
 		04EB6AF123E47A34004F7F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EB6AF023E47A34004F7F19 /* Assets.xcassets */; };
 		04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6F723AB768F00CB069D /* ViewController.swift */; };
@@ -46,11 +56,21 @@
 		043D023D23A8A6A60046AA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043D023F23A8A6A60046AA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0440324023ABA19900C1A060 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		044164F123F6E028007F0F93 /* LocationImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		044F2D2423D728CF001F544E /* ARScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScanViewController.swift; sourceTree = "<group>"; };
 		044F2D2E23D7344C001F544E /* alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpha.png; sourceTree = "<group>"; };
 		044F2D3023D7379A001F544E /* scene.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = scene.scnassets; sourceTree = "<group>"; };
 		044F2D3223D98803001F544E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		046E7C68240253B300689018 /* yaksa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yaksa.gif; sourceTree = "<group>"; };
+		046E7C6A2402546F00689018 /* ShowModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModelViewController.swift; sourceTree = "<group>"; };
+		046E7C6C24025C7000689018 /* ModelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailViewController.swift; sourceTree = "<group>"; };
+		046E7C6E240266F300689018 /* MuseumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetailViewController.swift; sourceTree = "<group>"; };
 		046F41F223E28BCA00E2A4D9 /* InfoHistoricalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHistoricalViewController.swift; sourceTree = "<group>"; };
+		04B3AD1A23FEC64E00FC95CC /* MapImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapImageViewController.swift; sourceTree = "<group>"; };
+		04B3AD1C23FEC8E700FC95CC /* FullImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		04B3AD1F23FED1DC00FC95CC /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		04C6FE7D23F28F8900C42FAF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		04C6FE7F23F2962500C42FAF /* MapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
 		04DFF86523A94D4800EAF2A5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		04EB6AF023E47A34004F7F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ECA6F723AB768F00CB069D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,8 +115,11 @@
 		043D022D23A8A6A50046AA4E /* Srivilaiproj */ = {
 			isa = PBXGroup;
 			children = (
+				046E7C672402539B00689018 /* gif */,
 				044F2D2923D7336F001F544E /* Image */,
+				04B3AD1E23FED1A100FC95CC /* Museum */,
 				044F2D2323D7289C001F544E /* Scan */,
+				04C6FE7C23F28F6B00C42FAF /* Map */,
 				04DFF86523A94D4800EAF2A5 /* Extensions.swift */,
 				043D022E23A8A6A50046AA4E /* AppDelegate.swift */,
 				043D023023A8A6A50046AA4E /* SceneDelegate.swift */,
@@ -131,6 +154,37 @@
 				044F2D2E23D7344C001F544E /* alpha.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		046E7C672402539B00689018 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				046E7C68240253B300689018 /* yaksa.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		04B3AD1E23FED1A100FC95CC /* Museum */ = {
+			isa = PBXGroup;
+			children = (
+				046E7C6E240266F300689018 /* MuseumDetailViewController.swift */,
+				04B3AD1F23FED1DC00FC95CC /* ScanQRViewController.swift */,
+				046E7C6A2402546F00689018 /* ShowModelViewController.swift */,
+				046E7C6C24025C7000689018 /* ModelDetailViewController.swift */,
+			);
+			path = Museum;
+			sourceTree = "<group>";
+		};
+		04C6FE7C23F28F6B00C42FAF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				04C6FE7D23F28F8900C42FAF /* MapViewController.swift */,
+				04C6FE7F23F2962500C42FAF /* MapDetailViewController.swift */,
+				044164F123F6E028007F0F93 /* LocationImageCollectionViewCell.swift */,
+				04B3AD1A23FEC64E00FC95CC /* MapImageViewController.swift */,
+				04B3AD1C23FEC8E700FC95CC /* FullImageCollectionViewCell.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		04DFF85E23A91D5E00EAF2A5 /* Controller */ = {
@@ -172,6 +226,7 @@
 				043D022823A8A6A50046AA4E /* Frameworks */,
 				043D022923A8A6A50046AA4E /* Resources */,
 				7C67B15499DAB197DB31E192 /* [CP] Embed Pods Frameworks */,
+				3893DB76CD8209775ECB76C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046E7C69240253B300689018 /* yaksa.gif in Resources */,
 				04286D2C23E4E2ED00B8B547 /* chang-l.png in Resources */,
 				044F2D3123D7379A001F544E /* scene.scnassets in Resources */,
 				043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */,
@@ -235,6 +291,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3893DB76CD8209775ECB76C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		42CEE8A642972EC7D14A906C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,10 +356,19 @@
 			files = (
 				04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */,
 				04286D2E23E4F20100B8B547 /* WatViewController.swift in Sources */,
+				04B3AD2023FED1DC00FC95CC /* ScanQRViewController.swift in Sources */,
+				04B3AD1D23FEC8E700FC95CC /* FullImageCollectionViewCell.swift in Sources */,
 				043D022F23A8A6A50046AA4E /* AppDelegate.swift in Sources */,
+				046E7C6B2402546F00689018 /* ShowModelViewController.swift in Sources */,
+				044164F223F6E028007F0F93 /* LocationImageCollectionViewCell.swift in Sources */,
 				046F41F323E28BCA00E2A4D9 /* InfoHistoricalViewController.swift in Sources */,
+				04C6FE8023F2962500C42FAF /* MapDetailViewController.swift in Sources */,
 				04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */,
+				04B3AD1B23FEC64E00FC95CC /* MapImageViewController.swift in Sources */,
+				046E7C6F240266F300689018 /* MuseumDetailViewController.swift in Sources */,
 				04056A6923E1E28000153B52 /* HomeViewController.swift in Sources */,
+				04C6FE7E23F28F8900C42FAF /* MapViewController.swift in Sources */,
+				046E7C6D24025C7000689018 /* ModelDetailViewController.swift in Sources */,
 				04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */,
 				040E680123DC2ABE00A03601 /* ArtInfoViewController.swift in Sources */,
 				043D023123A8A6A50046AA4E /* SceneDelegate.swift in Sources */,
