@@ -402,8 +402,8 @@
                                     <constraint firstAttribute="width" secondItem="RsQ-IB-CIu" secondAttribute="height" multiplier="752:478" id="Uej-Yc-7lL"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-Sp-Tb5">
-                                <rect key="frame" x="107.66666666666669" y="649" width="160" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-Sp-Tb5">
+                                <rect key="frame" x="107.66666666666666" y="649" width="160" height="40"/>
                                 <color key="backgroundColor" red="0.81960784310000001" green="0.58039215690000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="6Hg-Rs-wPs"/>
@@ -429,7 +429,7 @@
                             <constraint firstItem="RsQ-IB-CIu" firstAttribute="leading" secondItem="TeP-jZ-auL" secondAttribute="leading" id="9Sc-2n-9Yg"/>
                             <constraint firstItem="4rY-Sp-Tb5" firstAttribute="centerX" secondItem="TeP-jZ-auL" secondAttribute="centerX" id="VbN-op-2ht"/>
                             <constraint firstItem="RsQ-IB-CIu" firstAttribute="centerY" secondItem="TeP-jZ-auL" secondAttribute="centerY" id="aCc-px-YWB"/>
-                            <constraint firstItem="TeP-jZ-auL" firstAttribute="bottom" secondItem="4rY-Sp-Tb5" secondAttribute="bottom" constant="50" id="lUS-fc-1ae"/>
+                            <constraint firstItem="TeP-jZ-auL" firstAttribute="bottom" secondItem="4rY-Sp-Tb5" secondAttribute="bottom" constant="40" id="lUS-fc-1ae"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TeP-jZ-auL"/>
                         <connections>
@@ -1283,7 +1283,7 @@
                                                         <rect key="frame" x="20" y="0.0" width="335" height="226"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chang" translatesAutoresizingMaskIntoConstraints="NO" id="khS-pZ-Up7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="156" height="226"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="156" height="226.00000000000045"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="156" id="vAC-zc-wpX"/>
                                                                 </constraints>
@@ -1408,7 +1408,7 @@
                                                         <rect key="frame" x="20" y="0.0" width="335" height="226"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chang" translatesAutoresizingMaskIntoConstraints="NO" id="V86-mf-H4c">
-                                                                <rect key="frame" x="0.0" y="0.0" width="156" height="226"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="156" height="226.00000000000045"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="156" id="biE-nA-v9K"/>
                                                                 </constraints>

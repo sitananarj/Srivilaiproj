@@ -107,7 +107,6 @@ class MapDetailViewController: PullUpController, UICollectionViewDataSource, UIC
         let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: "image", for: indexPath) as! LocationImageCollectionViewCell
         let imageURL = (location!["images"] as! NSArray)[indexPath.row]
         cell.imageView.kf.setImage(with: URL(string: imageURL as! String))
-        
         return cell
     }
     
