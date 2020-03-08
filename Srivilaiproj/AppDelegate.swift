@@ -17,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UITabBar.appearance().tintColor = UIColor.black
+        
+        let standard = UINavigationBarAppearance()
+        standard.configureWithOpaqueBackground()
+//        standard.barTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        standard.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        standard.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
+        
+        UINavigationBar.appearance().standardAppearance = standard
+        
+        
+//        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+//        UINavigationBar.appearance().isTranslucent = false
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
+//        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
         FirebaseApp.configure()
         
         GMSServices.provideAPIKey("AIzaSyBqY3XusEV5jSUK_ThcXZlu2fMk4qSW68o")

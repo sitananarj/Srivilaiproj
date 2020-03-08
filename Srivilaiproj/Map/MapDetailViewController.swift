@@ -11,6 +11,7 @@ import PullUpController
 import Kingfisher
 import Alamofire
 import Firebase
+import CoreLocation
 
 class MapDetailViewController: PullUpController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -92,6 +93,19 @@ class MapDetailViewController: PullUpController, UICollectionViewDataSource, UIC
         Alamofire.request(URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(currentLat),\(currentLng)&destination=\(destLat),\(destLng)&key=AIzaSyBqY3XusEV5jSUK_ThcXZlu2fMk4qSW68o")!).responseJSON { json in
             
             print(json)
+
+            let dict = try! JSONSerialization.jsonObject(with: json.data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as! [String: AnyObject]
+            DispatchQueue.main.async {
+                let routes = dict["routes"] as! [Any]
+                let bestRoute = routes.first as! [String: Any]
+                let polyline = bestRoute["overview_polyline"] as! [String: Any]
+                let points = polyline["points"] as! String
+                
+                self.pullUpControllerMoveToVisiblePoint(self.pullUpControllerAllStickyPoints.first!, animated: true, completion: nil)
+                
+                self.parentVC?.showPath(pathString: points, dest: CLLocationCoordinate2D(latitude: destLat, longitude: destLng))
+                
+            }
         }
     }
     

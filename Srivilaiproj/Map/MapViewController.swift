@@ -25,6 +25,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     var currentPosition: CLLocationCoordinate2D?
     var selectedImages: [String]?
     var selectedIndex: Int?
+    var currentLine: GMSPolyline?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -127,6 +128,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         performSegue(withIdentifier: "showImage", sender: self)
     }
     
+    func showPath(pathString: String, dest: CLLocationCoordinate2D) {
+        currentLine?.map = nil
+        
+        let path = GMSPath.init(fromEncodedPath: pathString)
+        currentLine = GMSPolyline.init(path: path)
+        currentLine?.strokeWidth = 7
+        currentLine?.strokeColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+        currentLine?.map = mapView
+        
+        let bounds = GMSCoordinateBounds(coordinate: currentPosition!, coordinate: dest)
+        mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 100))
+    }
 
     /*
     // MARK: - Navigation

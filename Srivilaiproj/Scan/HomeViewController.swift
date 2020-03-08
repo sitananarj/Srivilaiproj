@@ -31,6 +31,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.layer.cornerRadius = 16
+        navigationController?.navigationBar.clipsToBounds = true
+        
+        setLanguageButton()
+        
         db.collection("histories").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -50,7 +55,28 @@ class HomeViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func setLanguageButton() {
+        let language = UserDefaults.standard.string(forKey: "language") ?? "EN"
+        let button = UIBarButtonItem(title: language, style: .plain, target: self, action: #selector(changeLanguage))
+        button.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+//        button.titleTextAttributes(for: .normal) = [NSAttributedString.Key.font: UIFont.init(name: "", size: 14)]
+        navigationItem.rightBarButtonItem = button
+    }
+    
+    @objc func changeLanguage() {
+        let language = UserDefaults.standard.string(forKey: "language") ?? "EN"
+        if language == "EN" {
+            UserDefaults.standard.set("TH", forKey: "language")
+        } else {
+            UserDefaults.standard.set("EN", forKey: "language")
+        }
         
+        setLanguageButton()
+        
+//        nameLabel.text = selectedData!["name_" + language] as! String
+    
     }
     
     // MARK: - Navigation

@@ -8,6 +8,8 @@
 
 import UIKit
 import Kingfisher
+import GoogleMaps
+import Firebase
 
 class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
@@ -17,8 +19,13 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
     @IBOutlet weak var infoTextView: UITextView!
     
     @IBOutlet weak var planImageView: UIImageView!
+    @IBOutlet weak var planView: UIView!
+    
+    @IBOutlet weak var mapView: GMSMapView!
+    
     
     var museumData: [String: Any]?
+    var selectedRoom: [String: Any]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +38,40 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
         infoTextView.text = museumData!["info"] as? String
         
         planImageView.kf.setImage(with: URL(string: museumData!["plan-img"] as! String))
+        
+        let position = museumData!["position"] as! GeoPoint
+        let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: position.latitude, longitude: position.longitude))
+        marker.map = mapView
+        
+        mapView.camera = GMSCameraPosition(target: CLLocationCoordinate2D(latitude: position.latitude, longitude: position.longitude), zoom: 15)
+        
+        for (index, room) in (museumData!["rooms"] as! [[String: Any]]).enumerated() {
+            let btn = UIButton(frame: CGRect(x: room["x"] as! Int, y: room["y"] as! Int, width: room["width"] as! Int, height: room["height"] as! Int))
+            btn.tag = index
+            planView.addSubview(btn)
+            
+            btn.addTarget(self, action: #selector(touchRoom(_:)), for: .touchUpInside)
+        }
+    }
+    
+    @objc func touchRoom(_ sender: Any) {
+        let room = (museumData!["rooms"] as! [[String: Any]])[(sender as? UIButton)!.tag]
+        selectedRoom = room
+        performSegue(withIdentifier: "showroom", sender: self)
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showroom" {
+            let VC = segue.destination as! RoomDetailViewController
+            VC.selectedRoom = selectedRoom
+        }
     }
-    */
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (museumData!["header-imgs"] as! [NSArray]).count
