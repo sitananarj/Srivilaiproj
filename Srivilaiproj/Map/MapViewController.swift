@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 import PullUpController
-import  Firebase
+import Firebase
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
 
@@ -21,7 +21,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     let db = Firestore.firestore()
     var locations: [[String: Any]] = []
     var markers: [GMSMarker] = []
-    var VC: PullUpController?
+    var VC: PullUpController? 
     var currentPosition: CLLocationCoordinate2D?
     var selectedImages: [String]?
     var selectedIndex: Int?
@@ -38,7 +38,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         VC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MapDetailViewController") as! PullUpController
         (VC as! MapDetailViewController).parentVC = self
-        addPullUpController(VC!, initialStickyPointOffset: 132 + 84, animated: false)
+        addPullUpController(VC!, initialStickyPointOffset: 132 + 84, animated: false)  //อันนี้ไม่เกี่ยว
         
         db.collection("locations").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -172,7 +172,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         for location in locations {
             if location["name"] as! String == marker.snippet {
                 (VC as! MapDetailViewController).location = location
-                
                 (VC as! MapDetailViewController).showLocation()
 
 

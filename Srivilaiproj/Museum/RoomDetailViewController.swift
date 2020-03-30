@@ -55,7 +55,6 @@ class RoomDetailViewController: UIViewController {
             performSegue(withIdentifier: "showitem", sender: self)
         }
     }
-    
     func foundQR(item: [String: Any]) {
         selectedItem = item
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

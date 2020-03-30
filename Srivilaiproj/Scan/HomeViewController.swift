@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 import Firebase
 
 class HomeViewController: UIViewController {
@@ -20,6 +21,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var imagenearby: UIImageView!
     
     var museumData: [String: Any]?
+    var historyData: [String: Any]?
+    
     
     @IBAction func nextpage(_ sender: Any) {
         
@@ -34,7 +37,7 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.layer.cornerRadius = 16
         navigationController?.navigationBar.clipsToBounds = true
         
-        setLanguageButton()
+//        setLanguageButton()
         
         db.collection("histories").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -50,35 +53,50 @@ class HomeViewController: UIViewController {
                     
                     self.imagenearby.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-nearby"] as! String)!))
                     
-                    
-                    
                 }
             }
         }
     }
-    
-    func setLanguageButton() {
-        let language = UserDefaults.standard.string(forKey: "language") ?? "EN"
-        let button = UIBarButtonItem(title: language, style: .plain, target: self, action: #selector(changeLanguage))
-        button.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-//        button.titleTextAttributes(for: .normal) = [NSAttributedString.Key.font: UIFont.init(name: "", size: 14)]
-        navigationItem.rightBarButtonItem = button
-    }
-    
-    @objc func changeLanguage() {
-        let language = UserDefaults.standard.string(forKey: "language") ?? "EN"
-        if language == "EN" {
-            UserDefaults.standard.set("TH", forKey: "language")
-        } else {
-            UserDefaults.standard.set("EN", forKey: "language")
-        }
-        
-        setLanguageButton()
-        
-//        nameLabel.text = selectedData!["name_" + language] as! String
-    
-    }
-    
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//           return (historyData!["image-show"] as! [NSArray]).count
+//       }
+//       
+//       func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageHomeCollectionViewCell", for: indexPath) as! ImageHomeCollectionViewCell
+//           let imageURL = (historyData!["image-show"] as! [String])[indexPath.row]
+//           cell.HomeimageView.kf.setImage(with: URL(string: imageURL))
+//           cell.Homewidth.constant = UIScreen.main.bounds.width
+//           
+//           return cell
+//       }
+//       
+//       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//           return CGSize(width: UIScreen.main.bounds.width, height: 300)
+//       }
+//    
+// 
+//    func setLanguageButton() {
+//        let language = UserDefaults.standard.string(forKey: "language") ?? "EN"
+//        let button = UIBarButtonItem(title: language, style: .plain, target: self, action: #selector(changeLanguage))
+//        button.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+////        button.titleTextAttributes(for: .normal) = [NSAttributedString.Key.font: UIFont.init(name: "", size: 14)]
+//        navigationItem.rightBarButtonItem = button
+//    }
+//
+//    @objc func changeLanguage() {
+//        let language = UserDefaults.standard.string(forKey: "language") ?? "EN"
+//        if language == "EN" {
+//            UserDefaults.standard.set("TH", forKey: "language")
+//        } else {
+//            UserDefaults.standard.set("EN", forKey: "language")
+//        }
+//
+//        setLanguageButton()
+//
+////        nameLabel.text = selectedData!["name_" + language] as! String
+//
+//    }
+//
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -88,7 +106,7 @@ class HomeViewController: UIViewController {
             VC.museumData = museumData
         }
     }
-    
+
     @IBAction func touchMuseum1(_ sender: Any) {
         db.collection("museums").whereField("name", isEqualTo: "KamphaengphetNational Museum").getDocuments { (querySnapshot, err) in
             if let err = err {
@@ -97,10 +115,8 @@ class HomeViewController: UIViewController {
                 for document in querySnapshot!.documents {
                     self.museumData = document.data()
                 }
-                
                 self.performSegue(withIdentifier: "showmuseum", sender: self)
             }
         }
-        //
     }
 }

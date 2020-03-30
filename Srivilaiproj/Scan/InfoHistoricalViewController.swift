@@ -27,7 +27,7 @@ class InfoHistoricalViewController: UIViewController {
     @IBOutlet weak var imagezone2: UIImageView!
     @IBOutlet weak var infozone2: UITextView!
     
-    
+    var historyData: [String: Any]?
     let db = Firestore.firestore()
     var selectName = ""
     override func viewDidLoad() {
@@ -38,7 +38,6 @@ class InfoHistoricalViewController: UIViewController {
             } else {
                 for document in querySnapshot!.documents {
                     self.imagetop.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-top"] as! String)!))
-                    
                     
                     self.nameplace.text = document.data()["name-top"] as? String
                     self.infohistorical.text = document.data()["info-historical"] as? String
