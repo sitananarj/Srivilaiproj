@@ -26,6 +26,7 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
     
     var museumData: [String: Any]?
     var selectedRoom: [String: Any]?
+    var imgs: [UIImageView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +53,46 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
             
             btn.addTarget(self, action: #selector(touchRoom(_:)), for: .touchUpInside)
         }
+        
+        for (index, room) in (museumData!["rooms"] as! [[String: Any]]).enumerated() {
+            var img = UIImageView()
+            if let stampPosition = room["stamp"] as? String {
+                if stampPosition == "bottom-left" {
+                    let width = (room["width"] as! Int) / 2
+                    let height = (room["height"] as! Int) / 2
+                    img = UIImageView(frame: CGRect(x: room["x"] as! Int, y: (room["y"] as! Int) + height, width: width, height: height))
+                }
+            } else {
+                img = UIImageView(frame: CGRect(x: room["x"] as! Int, y: room["y"] as! Int, width: room["width"] as! Int, height: room["height"] as! Int))
+            }
+            
+            img.image = UIImage(named: "stamp")
+            img.contentMode = .scaleAspectFit
+            img.tag = index
+            planView.addSubview(img)
+            
+            imgs.append(img)
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var getAll: Bool = true
+        for (index, room) in (museumData!["rooms"] as! [[String: Any]]).enumerated() {
+            if let _ = UserDefaults.standard.string(forKey: room["name"] as! String) {
+                imgs[index].alpha = 1
+            } else {
+                imgs[index].alpha = 0.5
+                getAll = false
+            }
+        }
+        
+        if getAll && UserDefaults.standard.string(forKey: museumData!["name"] as! String) == nil {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.33) {
+                self.performSegue(withIdentifier: "popuprating", sender: self)
+            }
+        }
     }
     
     @objc func touchRoom(_ sender: Any) {
@@ -69,6 +110,10 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
         if segue.identifier == "showroom" {
             let VC = segue.destination as! RoomDetailViewController
             VC.selectedRoom = selectedRoom
+        } else if segue.identifier == "popuprating" {
+            let VC = segue.destination as! PopupRatingViewController
+            VC.name = "How was your trip in \(museumData!["name"] as! String)"
+            VC.place = museumData!["name"] as? String
         }
     }
     

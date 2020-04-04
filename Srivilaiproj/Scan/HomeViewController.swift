@@ -34,8 +34,18 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.layer.cornerRadius = 16
-        navigationController?.navigationBar.clipsToBounds = true
+//        navigationController?.navigationBar.layer.cornerRadius = 15
+//        navigationController?.navigationBar.clipsToBounds = true
+        
+        
+//        let height: CGFloat = 200
+//        let bounds = self.navigationController!.navigationBar.bounds
+//        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height + height)
+//
+//        let radius:CGFloat = 30.0
+//        self.navigationController?.navigationBar.clipsToBounds = true
+//        self.navigationController?.navigationBar.layer.cornerRadius = radius
+//        self.navigationController?.navigationBar.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
         
 //        setLanguageButton()
         
@@ -106,7 +116,7 @@ class HomeViewController: UIViewController {
             VC.museumData = museumData
         }
     }
-
+    
     @IBAction func touchMuseum1(_ sender: Any) {
         db.collection("museums").whereField("name", isEqualTo: "KamphaengphetNational Museum").getDocuments { (querySnapshot, err) in
             if let err = err {

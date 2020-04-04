@@ -5,7 +5,6 @@
 //  Created by siwa on 25/1/2563 BE.
 //  Copyright © 2563 siwa. All rights reserved.
 //
-
 import UIKit
 import Firebase
 
@@ -40,17 +39,17 @@ class ArtInfoViewController: UIViewController {
                     for document in querySnapshot!.documents {
                         self.toptitle.text = document.data()["top-title"] as? String
                         
-                        self.top1image.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["top1-image"] as! String)!))
+                        self.top1image.image = try? UIImage(data: Data(contentsOf: URL(string: document.data()["top1-image"] as! String)!))
                         self.top1title.text = document.data()["top1-title"] as? String
                         self.top1body.text = document.data()["top1-body"] as? String
                         
-                        self.top2image.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["top2-image"] as! String)!))
+                        self.top2image.image = try? UIImage(data: Data(contentsOf: URL(string: document.data()["top2-image"] as! String)!))
                         self.top2title.text = document.data()["top2-title"] as? String
                         self.top2body.text = document.data()["top2-body"] as? String
                         
                         self.bottomtitle.text = document.data()["bottom-title"] as? String
                         
-                        self.bottom1image.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["bottom1-image"] as! String)!))
+                        self.bottom1image.image = try? UIImage(data: Data(contentsOf: URL(string: document.data()["bottom1-image"] as! String)!))
                         self.bottom1title.text = document.data()["bottom1-title"] as? String
                         self.bottom1body.text = document.data()["bottom1-body"] as? String
                         

@@ -19,6 +19,9 @@ class RoomDetailViewController: UIViewController {
     
     @IBOutlet weak var infoTextView: UITextView!
     
+    @IBOutlet weak var stampImageView: UIImageView!
+    @IBOutlet weak var stampLabel: UILabel!
+    
     var selectedRoom: [String: Any]?
     var selectedItem: [String: Any]?
 
@@ -42,27 +45,42 @@ class RoomDetailViewController: UIViewController {
             itemStackView.addArrangedSubview(label)
         }
         
+        let qrBtn = UIButton(frame: CGRect(x: selectedRoom!["qr_x"] as! Int, y: selectedRoom!["qr_y"] as! Int, width: selectedRoom!["qr_width"] as! Int, height: selectedRoom!["qr_height"] as! Int))
+        roomView.addSubview(qrBtn)
+        
+        qrBtn.addTarget(self, action: #selector(touchQr(_:)), for: .touchUpInside)
+        
         infoTextView.text = selectedRoom!["info"] as? String
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let _ = UserDefaults.standard.string(forKey: selectedRoom!["name"] as! String) {
+            stampImageView.alpha = 1
+            stampLabel.text = "You already got \(selectedRoom!["name"] as! String)’s Stamp"
+        } else {
+            stampImageView.alpha = 0.5
+            stampLabel.text = "Please scan QR code for \(selectedRoom!["name"] as! String)’s Stamp"
+        }
     }
     
     @objc func touchItem(_ sender: Any) {
         let item = (selectedRoom!["items"] as! [[String: Any]])[(sender as? UIButton)!.tag]
         selectedItem = item
-        if item["qr"] as! Bool {
-            performSegue(withIdentifier: "scanqr", sender: self)
-        } else {
-            performSegue(withIdentifier: "showitem", sender: self)
-        }
-    }
-    func foundQR(item: [String: Any]) {
-        selectedItem = item
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.performSegue(withIdentifier: "showitem", sender: self)
-        }
+        performSegue(withIdentifier: "showitem", sender: self)
     }
     
-
+    @objc func touchQr(_ sender: Any) {
+        performSegue(withIdentifier: "scanqr", sender: self)
+    }
+    
+    func foundQr() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.33) {
+            self.performSegue(withIdentifier: "popupstamp", sender: self)
+        }
+    }
     
     // MARK: - Navigation
 
@@ -70,11 +88,14 @@ class RoomDetailViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "scanqr" {
             let VC = segue.destination as! ScanQRViewController
-            VC.selectedItem = selectedItem
+            VC.selectedRoom = selectedRoom
             VC.parentVC = self
         } else if segue.identifier == "showitem" {
             let VC = segue.destination as! ShowModelViewController
             VC.selectedItem = selectedItem
+        } else if segue.identifier == "popupstamp" {
+            let VC = segue.destination as! PopupStampViewController
+            VC.name = "\(selectedRoom!["name"] as! String)’s Stamp"
         }
     }
     

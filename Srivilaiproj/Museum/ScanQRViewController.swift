@@ -13,7 +13,7 @@ class ScanQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 
     var captureSession: AVCaptureSession!
     var preview: AVCaptureVideoPreviewLayer!
-    var selectedItem: [String: Any]?
+    var selectedRoom: [String: Any]?
     weak var parentVC: RoomDetailViewController?
     var foundQR = false
     
@@ -61,9 +61,11 @@ class ScanQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if let metadataObject = metadataObjects.first {
             if let value = (metadataObject as? AVMetadataMachineReadableCodeObject)?.stringValue {
-                if value == selectedItem!["name"] as? String && !foundQR {
+                if value == selectedRoom!["name"] as? String && !foundQR {
                     foundQR = true
-                    parentVC?.foundQR(item: selectedItem!)
+                    
+                    UserDefaults.standard.set(selectedRoom!["name"], forKey: selectedRoom!["name"] as! String)
+                    parentVC?.foundQr()
                     navigationController?.popViewController(animated: true)
                 }
             }

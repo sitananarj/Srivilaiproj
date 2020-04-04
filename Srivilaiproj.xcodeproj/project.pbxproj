@@ -40,6 +40,8 @@
 		04EB6AF123E47A34004F7F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EB6AF023E47A34004F7F19 /* Assets.xcassets */; };
 		04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6F723AB768F00CB069D /* ViewController.swift */; };
 		04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6FD23AB877C00CB069D /* WebViewController.swift */; };
+		04F5C13B2438901600E2E4DD /* PopupStampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5C13A2438901600E2E4DD /* PopupStampViewController.swift */; };
+		04F5C13D2438965A00E2E4DD /* PopupRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5C13C2438965A00E2E4DD /* PopupRatingViewController.swift */; };
 		9BF2FCD2CAE9735D17AA3595 /* libPods-Srivilaiproj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE00D17279DE684B20E6212F /* libPods-Srivilaiproj.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		04EB6AF023E47A34004F7F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ECA6F723AB768F00CB069D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04ECA6FD23AB877C00CB069D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		04F5C13A2438901600E2E4DD /* PopupStampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupStampViewController.swift; sourceTree = "<group>"; };
+		04F5C13C2438965A00E2E4DD /* PopupRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupRatingViewController.swift; sourceTree = "<group>"; };
 		117FB033147AC8639AAC0A2E /* Pods-Srivilaiproj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Srivilaiproj.release.xcconfig"; path = "Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj.release.xcconfig"; sourceTree = "<group>"; };
 		AE00D17279DE684B20E6212F /* libPods-Srivilaiproj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Srivilaiproj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E4BFE22F6731BB1B24382 /* Pods-Srivilaiproj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Srivilaiproj.debug.xcconfig"; path = "Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 				04DC388B2407FB8100C085C9 /* RoomDetailViewController.swift */,
 				04B3AD1F23FED1DC00FC95CC /* ScanQRViewController.swift */,
 				046E7C6A2402546F00689018 /* ShowModelViewController.swift */,
+				04F5C13A2438901600E2E4DD /* PopupStampViewController.swift */,
+				04F5C13C2438965A00E2E4DD /* PopupRatingViewController.swift */,
 			);
 			path = Museum;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 				04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */,
 				04B3AD1B23FEC64E00FC95CC /* MapImageViewController.swift in Sources */,
 				046E7C6F240266F300689018 /* MuseumDetailViewController.swift in Sources */,
+				04F5C13D2438965A00E2E4DD /* PopupRatingViewController.swift in Sources */,
 				04056A6923E1E28000153B52 /* HomeViewController.swift in Sources */,
 				04C6FE7E23F28F8900C42FAF /* MapViewController.swift in Sources */,
 				04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */,
@@ -367,6 +374,7 @@
 				043D023923A8A6A50046AA4E /* Srivilaiproj.xcdatamodeld in Sources */,
 				044F2D2523D728CF001F544E /* ARScanViewController.swift in Sources */,
 				0440324123ABA19900C1A060 /* ScanViewController.swift in Sources */,
+				04F5C13B2438901600E2E4DD /* PopupStampViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
