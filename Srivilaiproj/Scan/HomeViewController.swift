@@ -34,8 +34,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        navigationController?.navigationBar.layer.cornerRadius = 15
-//        navigationController?.navigationBar.clipsToBounds = true
+        navigationController?.navigationBar.layer.cornerRadius = 15
+        navigationController?.navigationBar.clipsToBounds = true
         
         
 //        let height: CGFloat = 200
@@ -55,7 +55,7 @@ class HomeViewController: UIViewController {
             } else {
                 for document in querySnapshot!.documents {
                     
-                    self.imageshow.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-show"] as! String)!))
+                    self.imageshow.image = try! UIImage(data: Data(contentsOf: URL(string: (document.data()["image-show"] as? String)!)!))
                     
                     self.imagehistory.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-history"] as! String)!))
                     
