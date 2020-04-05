@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wF2-ha-Ldo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wF2-ha-Ldo">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -348,14 +348,14 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FullImageCollectionViewCell" id="0yh-hT-RaW" customClass="FullImageCollectionViewCell" customModule="Srivilaiproj" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="326" height="200"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QDj-4g-Ler">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="200"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ey-li-Jzj">
-                                                                            <rect key="frame" x="-24.666666666666657" y="-177" width="375.33333333333326" height="404"/>
+                                                                            <rect key="frame" x="-24.666666666666657" y="-102" width="375.33333333333326" height="404"/>
                                                                             <subviews>
                                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zu7-Ka-bPN">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="375.33333333333331" height="404"/>
@@ -403,8 +403,8 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9A8-AS-QLm">
-                                                        <rect key="frame" x="20" y="49.666666666666686" width="336" height="138.33333333333334"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9A8-AS-QLm">
+                                                        <rect key="frame" x="40" y="49" width="335" height="138.33333333333334"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1821,14 +1821,14 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="image" id="TaT-HE-bpr" customClass="LocationImageCollectionViewCell" customModule="Srivilaiproj" customModuleProvider="target">
-                                                        <rect key="frame" x="30" y="0.0" width="170" height="50"/>
+                                                        <rect key="frame" x="30" y="-5" width="170" height="210"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rh9-59-8an">
-                                                            <rect key="frame" x="0.0" y="0.0" width="170" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="his" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-AD-vcd">
-                                                                    <rect key="frame" x="0.0" y="-80" width="170" height="210"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="170" id="5WR-a0-Z7h"/>
                                                                         <constraint firstAttribute="height" constant="210" id="kkq-wc-vQ3"/>
@@ -2051,14 +2051,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FullImageCollectionViewCell" id="2R8-np-lmC" customClass="FullImageCollectionViewCell" customModule="Srivilaiproj" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="404"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4PY-3w-oFW">
-                                            <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="326" height="404"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-In-v7w">
-                                                    <rect key="frame" x="-24.666666666666657" y="-177" width="375.33333333333326" height="404"/>
+                                                    <rect key="frame" x="-24.666666666666657" y="0.0" width="375.33333333333326" height="404"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RjY-IG-wNV">
                                                             <rect key="frame" x="42.333333333333343" y="0.0" width="291" height="404"/>
@@ -2278,6 +2278,10 @@ in National Museam</string>
             <point key="canvasLocation" x="3096.8000000000002" y="2484.9753694581282"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="o1z-8Z-YI0"/>
+        <segue reference="yG4-L5-kTf"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="btnx" width="135" height="132"/>
         <image name="his" width="350" height="450"/>
@@ -2292,8 +2296,4 @@ in National Museam</string>
         <image name="wat01" width="483" height="462"/>
         <image name="world-heritage-site01" width="483" height="462"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="o1z-8Z-YI0"/>
-        <segue reference="yG4-L5-kTf"/>
-    </inferredMetricsTieBreakers>
 </document>
