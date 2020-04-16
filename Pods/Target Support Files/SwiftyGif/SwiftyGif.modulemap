@@ -1,4 +1,4 @@
-module SwiftyGif {
+framework module SwiftyGif {
   umbrella header "SwiftyGif-umbrella.h"
 
   export *

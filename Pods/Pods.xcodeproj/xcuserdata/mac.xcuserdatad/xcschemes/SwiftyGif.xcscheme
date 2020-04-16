@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "15AEBAFA43912F898FC2E1A73025C946"
-               BuildableName = "libSwiftyGif.a"
+               BuildableName = "SwiftyGif.framework"
                BlueprintName = "SwiftyGif"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

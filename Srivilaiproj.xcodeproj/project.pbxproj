@@ -21,6 +21,8 @@
 		044F2D2523D728CF001F544E /* ARScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F2D2423D728CF001F544E /* ARScanViewController.swift */; };
 		044F2D3123D7379A001F544E /* scene.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D3023D7379A001F544E /* scene.scnassets */; };
 		044F2D3323D98804001F544E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044F2D3223D98803001F544E /* GoogleService-Info.plist */; };
+		04509F1E244726D800DB6575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04509F1D244726D800DB6575 /* Assets.xcassets */; };
+		04509F202448BB6B00DB6575 /* TempleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04509F1F2448BB6B00DB6575 /* TempleDetailViewController.swift */; };
 		046E7C69240253B300689018 /* yaksa.gif in Resources */ = {isa = PBXBuildFile; fileRef = 046E7C68240253B300689018 /* yaksa.gif */; };
 		046E7C6B2402546F00689018 /* ShowModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E7C6A2402546F00689018 /* ShowModelViewController.swift */; };
 		046E7C6F240266F300689018 /* MuseumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E7C6E240266F300689018 /* MuseumDetailViewController.swift */; };
@@ -37,12 +39,13 @@
 		04DC2D2B2429CE6E004398D9 /* buddha.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04DC2D2A2429CE6E004398D9 /* buddha.gif */; };
 		04DC388C2407FB8100C085C9 /* RoomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC388B2407FB8100C085C9 /* RoomDetailViewController.swift */; };
 		04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFF86523A94D4800EAF2A5 /* Extensions.swift */; };
-		04EB6AF123E47A34004F7F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EB6AF023E47A34004F7F19 /* Assets.xcassets */; };
 		04ECA6F823AB768F00CB069D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6F723AB768F00CB069D /* ViewController.swift */; };
 		04ECA6FE23AB877C00CB069D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECA6FD23AB877C00CB069D /* WebViewController.swift */; };
 		04F5C13B2438901600E2E4DD /* PopupStampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5C13A2438901600E2E4DD /* PopupStampViewController.swift */; };
 		04F5C13D2438965A00E2E4DD /* PopupRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5C13C2438965A00E2E4DD /* PopupRatingViewController.swift */; };
-		9BF2FCD2CAE9735D17AA3595 /* libPods-Srivilaiproj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE00D17279DE684B20E6212F /* libPods-Srivilaiproj.a */; };
+		04F76D062442F008006630A8 /* KamphaengphetNational Museum_TH.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04F76D042442F008006630A8 /* KamphaengphetNational Museum_TH.mp4 */; };
+		04F76D072442F008006630A8 /* KamphaengphetNational Museum_EN.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04F76D052442F008006630A8 /* KamphaengphetNational Museum_EN.mp4 */; };
+		4234B771AFD61D05889D8B2E /* Pods_Srivilaiproj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB4D92A2FA20C334AA38E7B /* Pods_Srivilaiproj.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,8 @@
 		044F2D2423D728CF001F544E /* ARScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScanViewController.swift; sourceTree = "<group>"; };
 		044F2D3023D7379A001F544E /* scene.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = scene.scnassets; sourceTree = "<group>"; };
 		044F2D3223D98803001F544E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04509F1D244726D800DB6575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
+		04509F1F2448BB6B00DB6575 /* TempleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleDetailViewController.swift; sourceTree = "<group>"; };
 		046E7C68240253B300689018 /* yaksa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yaksa.gif; sourceTree = "<group>"; };
 		046E7C6A2402546F00689018 /* ShowModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModelViewController.swift; sourceTree = "<group>"; };
 		046E7C6E240266F300689018 /* MuseumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetailViewController.swift; sourceTree = "<group>"; };
@@ -79,13 +84,14 @@
 		04DC2D2A2429CE6E004398D9 /* buddha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = buddha.gif; sourceTree = "<group>"; };
 		04DC388B2407FB8100C085C9 /* RoomDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailViewController.swift; sourceTree = "<group>"; };
 		04DFF86523A94D4800EAF2A5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		04EB6AF023E47A34004F7F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ECA6F723AB768F00CB069D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04ECA6FD23AB877C00CB069D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		04F5C13A2438901600E2E4DD /* PopupStampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupStampViewController.swift; sourceTree = "<group>"; };
 		04F5C13C2438965A00E2E4DD /* PopupRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupRatingViewController.swift; sourceTree = "<group>"; };
+		04F76D042442F008006630A8 /* KamphaengphetNational Museum_TH.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KamphaengphetNational Museum_TH.mp4"; path = "../../../../KamphaengphetNational Museum_TH.mp4"; sourceTree = "<group>"; };
+		04F76D052442F008006630A8 /* KamphaengphetNational Museum_EN.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KamphaengphetNational Museum_EN.mp4"; path = "../../../../KamphaengphetNational Museum_EN.mp4"; sourceTree = "<group>"; };
 		117FB033147AC8639AAC0A2E /* Pods-Srivilaiproj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Srivilaiproj.release.xcconfig"; path = "Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj.release.xcconfig"; sourceTree = "<group>"; };
-		AE00D17279DE684B20E6212F /* libPods-Srivilaiproj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Srivilaiproj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB4D92A2FA20C334AA38E7B /* Pods_Srivilaiproj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Srivilaiproj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E4BFE22F6731BB1B24382 /* Pods-Srivilaiproj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Srivilaiproj.debug.xcconfig"; path = "Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BF2FCD2CAE9735D17AA3595 /* libPods-Srivilaiproj.a in Frameworks */,
+				4234B771AFD61D05889D8B2E /* Pods_Srivilaiproj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +130,7 @@
 		043D022D23A8A6A50046AA4E /* Srivilaiproj */ = {
 			isa = PBXGroup;
 			children = (
+				04F76D012442EF13006630A8 /* sound */,
 				046E7C672402539B00689018 /* gif */,
 				044F2D2923D7336F001F544E /* Image */,
 				04B3AD1E23FED1A100FC95CC /* Museum */,
@@ -132,8 +139,8 @@
 				04DFF86523A94D4800EAF2A5 /* Extensions.swift */,
 				043D022E23A8A6A50046AA4E /* AppDelegate.swift */,
 				043D023023A8A6A50046AA4E /* SceneDelegate.swift */,
+				04509F1D244726D800DB6575 /* Assets.xcassets */,
 				044F2D3023D7379A001F544E /* scene.scnassets */,
-				04EB6AF023E47A34004F7F19 /* Assets.xcassets */,
 				043D023423A8A6A50046AA4E /* Main.storyboard */,
 				043D023C23A8A6A60046AA4E /* LaunchScreen.storyboard */,
 				043D023F23A8A6A60046AA4E /* Info.plist */,
@@ -150,6 +157,7 @@
 				04056A6823E1E28000153B52 /* HomeViewController.swift */,
 				046F41F223E28BCA00E2A4D9 /* InfoHistoricalViewController.swift */,
 				04D01BCD241C1AB200CE3899 /* ImageHomeCollectionViewCell.swift */,
+				04509F1F2448BB6B00DB6575 /* TempleDetailViewController.swift */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -210,6 +218,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		04F76D012442EF13006630A8 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				04F76D052442F008006630A8 /* KamphaengphetNational Museum_EN.mp4 */,
+				04F76D042442F008006630A8 /* KamphaengphetNational Museum_TH.mp4 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
 		43DF6B88F54C6719B69EDCA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				04D01BCF241C251000CE3899 /* Alamofire.framework */,
-				AE00D17279DE684B20E6212F /* libPods-Srivilaiproj.a */,
+				EAB4D92A2FA20C334AA38E7B /* Pods_Srivilaiproj.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +257,7 @@
 				043D022823A8A6A50046AA4E /* Frameworks */,
 				043D022923A8A6A50046AA4E /* Resources */,
 				3893DB76CD8209775ECB76C8 /* [CP] Copy Pods Resources */,
+				B15EA270E4268DC773B9430F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,15 +306,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F76D062442F008006630A8 /* KamphaengphetNational Museum_TH.mp4 in Resources */,
 				04D01BC8241B844400CE3899 /* awasyai.png in Resources */,
 				046E7C69240253B300689018 /* yaksa.gif in Resources */,
+				04F76D072442F008006630A8 /* KamphaengphetNational Museum_EN.mp4 in Resources */,
+				04509F1E244726D800DB6575 /* Assets.xcassets in Resources */,
 				04D01BCA241B844F00CE3899 /* suankaewauthayannoi.png in Resources */,
 				04286D2C23E4E2ED00B8B547 /* chang-l.png in Resources */,
 				044F2D3123D7379A001F544E /* scene.scnassets in Resources */,
 				043D023E23A8A6A60046AA4E /* LaunchScreen.storyboard in Resources */,
 				04D01BCC241B86CF00CE3899 /* sigha.png in Resources */,
 				043D023623A8A6A50046AA4E /* Main.storyboard in Resources */,
-				04EB6AF123E47A34004F7F19 /* Assets.xcassets in Resources */,
 				04286D2B23E4E2ED00B8B547 /* chang.png in Resources */,
 				04DC2D2B2429CE6E004398D9 /* buddha.gif in Resources */,
 				044F2D3323D98804001F544E /* GoogleService-Info.plist in Resources */,
@@ -345,6 +365,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B15EA270E4268DC773B9430F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Srivilaiproj/Pods-Srivilaiproj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04509F202448BB6B00DB6575 /* TempleDetailViewController.swift in Sources */,
 				04DFF86623A94D4800EAF2A5 /* Extensions.swift in Sources */,
 				04D01BCE241C1AB200CE3899 /* ImageHomeCollectionViewCell.swift in Sources */,
 				04B3AD2023FED1DC00FC95CC /* ScanQRViewController.swift in Sources */,

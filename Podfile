@@ -3,7 +3,7 @@
 
 target 'Srivilaiproj' do
   # Comment the next line if you don't want to use dynamic frameworks
-# use_frameworks!
+use_frameworks!
 
   # Pods for Srivilaiproj
 
@@ -17,6 +17,9 @@ pod 'PullUpController'
 pod 'Kingfisher'
 pod 'Alamofire'
 pod 'SwiftyGif'
+pod 'FacebookCore'
+pod 'FBSDKShareKit'
+pod 'FBSDKLoginKit'
 #
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods

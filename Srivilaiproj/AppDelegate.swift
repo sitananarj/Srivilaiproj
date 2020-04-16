@@ -10,13 +10,17 @@ import UIKit
 import CoreData
 import Firebase
 import GoogleMaps
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UITabBar.appearance().tintColor = UIColor.black
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0.8579598069, green: 0.6432866454, blue: 0.256688118, alpha: 1)
+        UITabBar.appearance().barTintColor = #colorLiteral(red: 0.2196078431, green: 0.2117647059, blue: 0.2117647059, alpha: 1)
+        UITabBar.appearance().layer.cornerRadius = 30.0
+        UITabBar.appearance().layer.masksToBounds = true
         
         let standard = UINavigationBarAppearance()
         standard.configureWithOpaqueBackground()
@@ -25,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         standard.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
 
         UINavigationBar.appearance().standardAppearance = standard
+        
+
         
         
 //        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
@@ -40,8 +46,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            //window?.makeKeyAndVisible()
            //let gameViewController = GameViewController() // choose ViewController for final or GameViewController for starter
           // window?.rootViewController = gameViewController
+        
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
            return true
          }
+    
+    open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+    }
    
     // MARK: UISceneSession Lifecycle
 

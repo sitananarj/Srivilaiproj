@@ -1,4 +1,4 @@
-module Pods_Srivilaiproj {
+framework module Pods_Srivilaiproj {
   umbrella header "Pods-Srivilaiproj-umbrella.h"
 
   export *

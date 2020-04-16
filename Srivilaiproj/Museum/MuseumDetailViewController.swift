@@ -10,6 +10,9 @@ import UIKit
 import Kingfisher
 import GoogleMaps
 import Firebase
+import AVFoundation
+//import FBSDKShareKit
+//import FBSDKCoreKit
 
 class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
@@ -23,10 +26,14 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
     
     @IBOutlet weak var mapView: GMSMapView!
     
+    @IBOutlet weak var shareView: UIView!
     
     var museumData: [String: Any]?
     var selectedRoom: [String: Any]?
     var imgs: [UIImageView] = []
+    
+    var soundPlayer: AVAudioPlayer!
+    var isPlay: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +80,14 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
             
             imgs.append(img)
         }
+        
+//        let content: SharePhotoContent = SharePhotoContent()
+//        content.photos = [SharePhoto(imageURL: URL(string: museumData!["share-img"] as! String)!, userGenerated: true)]
+//        
+//        let shareButton: FBShareButton = FBShareButton()
+//        shareButton.shareContent = content
+//        shareView.addSubview(shareButton)
+//        shareButton.frame = CGRect(x: 0, y: 0, width: shareView.bounds.width, height: shareView.bounds.height)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -101,7 +116,25 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
         performSegue(withIdentifier: "showroom", sender: self)
     }
     
-
+    @IBAction func touchSound(_ sender: Any) {
+        if !isPlay {
+            let language = UserDefaults.standard.string(forKey: "language") ?? "EN"
+            if let url = Bundle.main.url(forResource: "\(museumData!["name"] as! String)_\(language)", withExtension: "mp4") {
+                do {
+                    soundPlayer = try AVAudioPlayer(contentsOf: url)
+                    soundPlayer.play()
+                    
+                    isPlay = true
+                } catch {
+                    print(error)
+                }
+            }
+        } else {
+            soundPlayer.stop()
+            
+            isPlay = false
+        }
+    }
     
     // MARK: - Navigation
 

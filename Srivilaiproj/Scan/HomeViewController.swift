@@ -9,6 +9,8 @@
 import UIKit
 import Kingfisher
 import Firebase
+//import FBSDKLoginKit
+//import FBSDKCoreKit
 
 class HomeViewController: UIViewController {
     
@@ -17,15 +19,15 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var imagehistory: UIImageView!
     
     @IBOutlet weak var imagemuseum: UIImageView!
-
+    
     @IBOutlet weak var imagenearby: UIImageView!
+    
+    @IBOutlet weak var loginView: UIView!
     
     var museumData: [String: Any]?
     var historyData: [String: Any]?
     
-    
     @IBAction func nextpage(_ sender: Any) {
-        
     }
     
     let db = Firestore.firestore()
@@ -36,6 +38,18 @@ class HomeViewController: UIViewController {
         
         navigationController?.navigationBar.layer.cornerRadius = 15
         navigationController?.navigationBar.clipsToBounds = true
+        
+//        self.imagemuseum.layer.cornerRadius = self.imagemuseum.frame.width/8
+//        self.imagemuseum.clipsToBounds = true
+        imagehistory.layer.cornerRadius = 15
+        imagemuseum.layer.cornerRadius = 15
+        imagenearby.layer.cornerRadius = 15
+        
+
+
+        
+
+
         
         
 //        let height: CGFloat = 200
@@ -66,6 +80,11 @@ class HomeViewController: UIViewController {
                 }
             }
         }
+        
+//        let loginButton: FBLoginButton = FBLoginButton()
+//        loginView.addSubview(loginButton)
+//        loginButton.frame = CGRect(x: 0, y: 0, width: loginView.bounds.width, height: loginView.bounds.height)
+
     }
 //    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //           return (historyData!["image-show"] as! [NSArray]).count
