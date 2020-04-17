@@ -84,8 +84,8 @@ class MapDetailViewController: PullUpController {
     }
     
     @IBAction func touchNavigate(_ sender: Any) {
-        let currentLat = parentVC!.currentPosition!.latitude
-        let currentLng = parentVC!.currentPosition!.longitude
+        let currentLat = parentVC!.currentPosition?.latitude
+        let currentLng = parentVC!.currentPosition?.longitude
         
         let position = location!["position"] as! GeoPoint
         let destLat = position.latitude

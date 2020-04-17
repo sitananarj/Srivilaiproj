@@ -27,15 +27,13 @@ class TempleDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     
-        
         db.collection("temples").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
                     
-                    self.imgTemple.image = try! UIImage(data: Data(contentsOf: URL(string: (document.data()["image-slide"] as? String)!)!))
+                    self.imgTemple.image = try! UIImage(data: Data(contentsOf: URL(string: (document.data()["img-slide"] as? String)!)!))
                     
                     self.nameTemple.text = document.data()["name-temple"] as? String
                     self.infoTemple.text = document.data()["info-temple"] as? String
