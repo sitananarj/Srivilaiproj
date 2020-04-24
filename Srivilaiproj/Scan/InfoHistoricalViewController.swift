@@ -21,7 +21,7 @@ class InfoHistoricalViewController: UIViewController {
     @IBOutlet weak var imagezone1: UIImageView!
     @IBOutlet weak var infozone1: UITextView!
     
-    @IBOutlet weak var nextpagewat: UIButton!
+//    @IBOutlet weak var nextpagewat: UIButton!
     
     @IBOutlet weak var namezone2: UILabel!
     @IBOutlet weak var imagezone2: UIImageView!

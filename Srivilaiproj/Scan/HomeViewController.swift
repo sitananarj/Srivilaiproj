@@ -69,8 +69,8 @@ class HomeViewController: UIViewController {
             } else {
                 for document in querySnapshot!.documents {
                     
-                    self.imageshow.image = try! UIImage(data: Data(contentsOf: URL(string: (document.data()["image-show"] as? String)!)!))
-                    
+//                    self.imageshow.image = try! UIImage(data: Data(contentsOf: URL(string: (document.data()["image-show"] as? String)!)!))
+//                    
                     self.imagehistory.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-history"] as! String)!))
                     
                     self.imagemuseum.image = try! UIImage(data: Data(contentsOf: URL(string: document.data()["image-museum"] as! String)!))

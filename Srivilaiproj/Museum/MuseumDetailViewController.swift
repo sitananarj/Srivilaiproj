@@ -11,10 +11,11 @@ import Kingfisher
 import GoogleMaps
 import Firebase
 import AVFoundation
-//import FBSDKShareKit
-//import FBSDKCoreKit
+import FBSDKShareKit
+import FBSDKCoreKit
+import Alamofire
 
-class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, CLLocationManagerDelegate {
 
     @IBOutlet weak var imageCollectionView: UICollectionView!
     
@@ -35,23 +36,30 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
     var soundPlayer: AVAudioPlayer!
     var isPlay: Bool = false
     
+    let locationManager =  CLLocationManager()
+    var isFirstLocation = false
+    var currentPosition: CLLocationCoordinate2D?
+    var currentLine: GMSPolyline?
+    var currentMarker: GMSMarker?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imageCollectionView.dataSource = self
         imageCollectionView.delegate = self
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = false
        
         title = museumData!["name"] as? String
         nameLabel.text = museumData!["name"] as? String
         infoTextView.text = museumData!["info"] as? String
         
         planImageView.kf.setImage(with: URL(string: museumData!["plan-img"] as! String))
-        
-        let position = museumData!["position"] as! GeoPoint
-        let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: position.latitude, longitude: position.longitude))
-        marker.map = mapView
-        
-        mapView.camera = GMSCameraPosition(target: CLLocationCoordinate2D(latitude: position.latitude, longitude: position.longitude), zoom: 15)
         
         for (index, room) in (museumData!["rooms"] as! [[String: Any]]).enumerated() {
             let btn = UIButton(frame: CGRect(x: room["x"] as! Int, y: room["y"] as! Int, width: room["width"] as! Int, height: room["height"] as! Int))
@@ -81,13 +89,75 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
             imgs.append(img)
         }
         
-//        let content: SharePhotoContent = SharePhotoContent()
-//        content.photos = [SharePhoto(imageURL: URL(string: museumData!["share-img"] as! String)!, userGenerated: true)]
-//        
-//        let shareButton: FBShareButton = FBShareButton()
-//        shareButton.shareContent = content
-//        shareView.addSubview(shareButton)
-//        shareButton.frame = CGRect(x: 0, y: 0, width: shareView.bounds.width, height: shareView.bounds.height)
+        KingfisherManager.shared.retrieveImage(with: ImageResource(downloadURL: URL(string: museumData!["share-img"] as! String)!)) { result in
+            if let image = try? result.get().image {
+                let content: SharePhotoContent = SharePhotoContent()
+                content.photos = [SharePhoto(image: image, userGenerated: false)]
+                
+                let shareButton: FBShareButton = FBShareButton()
+                shareButton.shareContent = content
+                self.shareView.addSubview(shareButton)
+                shareButton.frame = CGRect(x: 0, y: 0, width: self.shareView.bounds.width, height: self.shareView.bounds.height)
+            }
+        }
+    }
+    
+    func createMap() {
+        let currentLat = currentPosition!.latitude
+        let currentLng = currentPosition!.longitude
+        
+        let position = museumData!["position"] as! GeoPoint
+        let destLat = position.latitude
+        let destLng = position.longitude
+        let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: position.latitude, longitude: position.longitude))
+        marker.map = mapView
+        
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(currentLat),\(currentLng)&destination=\(destLat),\(destLng)&key=AIzaSyBqY3XusEV5jSUK_ThcXZlu2fMk4qSW68o"
+        
+        print(url)
+        
+        AF.request((URL(string: url))!).responseJSON { json in
+            
+            print(json)
+            
+            let dict = try! JSONSerialization.jsonObject(with: json.data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as! [String: AnyObject]
+            DispatchQueue.main.async {
+                let routes = dict["routes"] as! [Any]
+                let bestRoute = routes.first as! [String: Any]
+                let polyline = bestRoute["overview_polyline"] as! [String: Any]
+                let points = polyline["points"] as! String
+                let legs = bestRoute["legs"] as! [Any]
+                let bestLeg = legs.first as! [String: Any]
+                let duration = bestLeg["duration"] as! [String: Any]
+                let text = duration["text"] as! String
+ 
+                self.showPath(text: text, pathString: points, dest: CLLocationCoordinate2D(latitude: destLat, longitude: destLng))
+                
+            }
+        }
+    }
+    
+    func showPath(text: String, pathString: String, dest: CLLocationCoordinate2D) {
+        currentLine?.map = nil
+        
+        let path = GMSPath.init(fromEncodedPath: pathString)
+        currentLine = GMSPolyline.init(path: path)
+        currentLine?.strokeWidth = 7
+        currentLine?.strokeColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+        currentLine?.map = mapView
+        
+        let centerIndex = Int((path?.count())! / 2)
+        let centerPosition = path?.coordinate(at: UInt(centerIndex))
+        currentMarker?.map = nil
+        
+        currentMarker = GMSMarker(position: centerPosition!)
+        currentMarker?.title = text
+        currentMarker?.icon = UIImage(named: "right-icon-rollover")
+        currentMarker?.map = mapView
+        mapView.selectedMarker = currentMarker
+        
+        let bounds = GMSCoordinateBounds(coordinate: currentPosition!, coordinate: dest)
+        mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 100))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -102,7 +172,7 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
                 getAll = false
             }
         }
-        
+
         if getAll && UserDefaults.standard.string(forKey: museumData!["name"] as! String) == nil {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.33) {
                 self.performSegue(withIdentifier: "popuprating", sender: self)
@@ -166,5 +236,21 @@ class MuseumDetailViewController: UIViewController, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 200)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.startUpdatingLocation()
+            mapView.isMyLocationEnabled = true
+            
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first, !isFirstLocation {
+            currentPosition = location.coordinate
+            isFirstLocation = true
+            createMap()
+        }
     }
 }

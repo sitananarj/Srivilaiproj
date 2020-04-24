@@ -84,14 +84,18 @@ class MapDetailViewController: PullUpController {
     }
     
     @IBAction func touchNavigate(_ sender: Any) {
-        let currentLat = parentVC!.currentPosition?.latitude
-        let currentLng = parentVC!.currentPosition?.longitude
+        let currentLat = parentVC!.currentPosition!.latitude
+        let currentLng = parentVC!.currentPosition!.longitude
         
         let position = location!["position"] as! GeoPoint
         let destLat = position.latitude
         let destLng = position.longitude
+        
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(currentLat),\(currentLng)&destination=\(destLat),\(destLng)&key=AIzaSyBqY3XusEV5jSUK_ThcXZlu2fMk4qSW68o"
+        
+        print(url)
 
-        AF.request((URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(currentLat),\(currentLng)&destination=\(destLat),\(destLng)&key=AIzaSyBqY3XusEV5jSUK_ThcXZlu2fMk4qSW68o"))!).responseJSON { json in
+        AF.request((URL(string: url))!).responseJSON { json in
 
             print(json)
 
